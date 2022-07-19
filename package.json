@@ -1,0 +1,26 @@
+{
+  "name": "nodejs-typescript-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "start:dev": "nodemon",
+    "lint": "eslint ./src/ --ext .ts",
+    "build": "rimraf ./dist && tsc",
+    "start": "npm run build && node build/index.js"
+  },
+  "keywords": ["node", "typescript", "typescript-starter", "nodejs", "eslint"],
+  "author": "katunch",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^4.7.4",
+    "@types/node": "^18.0.6",
+    "@typescript-eslint/eslint-plugin": "^5.30.7",
+    "@typescript-eslint/parser": "^5.30.7",
+    "nodemon": "^2.0.19",
+    "eslint": "^8.20.0",
+    "ts-node": "^10.9.1",
+    "rimraf": "^3.0.2"
+  }
+}
